@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: linear-gradient(to bottom right, #ffe6f0, #fce4ec);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: #ff4081;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .message-button {
+      background-color: #ffffffcc;
+      border: 2px solid #ff80ab;
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin: 1rem;
+      font-size: 1.2rem;
+      color: #d81b60;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .message-button:hover {
+      background-color: #f8bbd0;
+    }
+
+    .hidden-message {
+      display: none;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: #880e4f;
+    }
+
+    .flower {
+      font-size: 2rem;
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🌸 Just for You 🌸</h1>
+
+  <div class="flower">💐🌷🌸🌹🌺🌼💖</div>
+
+  <button class="message-button" onclick="toggleMessage('msg1')">Click me 🌼</button>
+  <div class="hidden-message" id="msg1">You are the sunshine on my cloudy days ☀️</div>
+
+  <button class="message-button" onclick="toggleMessage('msg2')">Another surprise 💕</button>
+  <div class="hidden-message" id="msg2">Your smile is the most beautiful thing I've ever seen 💖</div>
+
+  <button class="message-button" onclick="toggleMessage('msg3')">One more 🌺</button>
+  <div class="hidden-message" id="msg3">I love you more than words can ever say 🌈</div>
+
+  <button class="message-button" onclick="toggleMessage('msg4')">Last one? 😚</button>
+  <div class="hidden-message" id="msg4">I'll always be here — for you, beside you, cheering you on 💗</div>
+
+  <script>
+    function toggleMessage(id) {
+      const msg = document.getElementById(id);
+      msg.style.display = msg.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
